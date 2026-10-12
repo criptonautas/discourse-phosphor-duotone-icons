@@ -1,0 +1,12 @@
+// Optical alignment with Font Awesome and text.
+//
+// Every symbol sits on Phosphor's 256 grid with padding around the glyph: the
+// median glyph spans 24–232 (0.81em of the 1em icon box), while the Font Awesome
+// glyphs these icons replace fill 0.875–1em of the same box. Mapped icons
+// therefore read smaller than the FA icon and the adjacent cap height. Both sets
+// are vertically centred in the box, so only size needs correcting: scale by
+// 256/224 (the 16-unit inset). `scale` composes with any rotate/transform that
+// core or a theme applies to an icon and does not change layout.
+svg.svg-icon:has(> use[href^="#ph-dt-"]) {
+  scale: 1.143;
+}
