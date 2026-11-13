@@ -35,6 +35,7 @@ function initIcons(api) {
   api.replaceIcon("bell", "ph-dt-bell");
   api.replaceIcon("bell-slash", "ph-dt-bell-slash");
   api.replaceIcon("bitcoin-sign", "ph-dt-btc");
+  api.replaceIcon("boards", "ph-dt-boards");
   api.replaceIcon("cake-candles", "ph-dt-cake");
   api.replaceIcon("cake", "ph-dt-cake");
   api.replaceIcon("bold", "ph-dt-text-b");
